@@ -5,28 +5,42 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BinarySearchImpl {
-	
-	// how to telll that this a dependency for BinarySearchImpl bean?
-	
+
+	// how to tell that this a dependency for BinarySearchImpl bean? -> @Autowired
+
 	@Autowired
 	private SortAlgorithm sortAlgorithm;
-	
-	
-public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
+
+	/**
+	 * @param args 
+	 * This is DI using Constructor
+	 */
+
+	public BinarySearchImpl(SortAlgorithm sortAlgorithm) {
 		super();
 		this.sortAlgorithm = sortAlgorithm;
 	}
 
+	/**
+	 * This is DI using Setter Injection. It is a default method. So if
+	 *  we remove code for Constructor and Setter injection code, By
+	 *  default springboot will consider constructor injection.
+	 */
 
-public int binarySearch(int[] numbers, int numberToSearchFor) {
-		
-	// implementing the Sorting Logic
-	//BubbleSortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
+	/*
+	 * public void setSortAlgorithm(SortAlgorithm sortAlgorithm) {
+	 * this.sortAlgorithm = sortAlgorithm; }
+	 */
 	
-	int [] sortedNumbers = sortAlgorithm.sort(numbers);
-		
+	public int binarySearch(int[] numbers, int numberToSearchFor) {
+
+		// implementing the Sorting Logic
+		// BubbleSortAlgorithm bubbleSortAlgorithm = new BubbleSortAlgorithm();
+
+		int[] sortedNumbers = sortAlgorithm.sort(numbers);
+
 		// Search the array
-		
+
 		return 3;
 	}
 
