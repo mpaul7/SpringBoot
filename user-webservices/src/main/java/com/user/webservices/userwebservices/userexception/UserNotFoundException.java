@@ -1,4 +1,4 @@
-package com.user.webservices.userwebservices.user;
+package com.user.webservices.userwebservices.userexception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

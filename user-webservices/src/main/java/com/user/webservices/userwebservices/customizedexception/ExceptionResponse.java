@@ -1,4 +1,4 @@
-package com.user.webservices.userwebservices.exception;
+package com.user.webservices.userwebservices.customizedexception;
 
 import java.util.Date;
 

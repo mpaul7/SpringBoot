@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.user.webservices.userwebservices.user.UserNotFoundException;
+import com.user.webservices.userwebservices.userexception.UserNotFoundException;
 
 @RestController
 public class UserResource {

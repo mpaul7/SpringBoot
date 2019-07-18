@@ -1,4 +1,4 @@
-package com.user.webservices.userwebservices.exception;
+package com.user.webservices.userwebservices.customizedexception;
 
 import java.util.Date;
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.user.webservices.userwebservices.user.UserNotFoundException;
+import com.user.webservices.userwebservices.userexception.UserNotFoundException;
 
 // To allpy this class to all the controllers
 @ControllerAdvice
