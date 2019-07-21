@@ -1,4 +1,4 @@
-package com.springbootunittesting.mockingmockito;
+package com.springboot.unittesting.mockingmockito;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
